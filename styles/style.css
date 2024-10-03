@@ -1,0 +1,22 @@
+/* Young Serif font family  */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/* font-family: "Young Serif", serif; */
+
+/* Outifit font family  */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* font-family: "Outfit", sans-serif; */
+
+/* Main colors */
+:root {
+    --White: hsl(0, 0%, 100%);
+
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-00: hsl(332, 51%, 32%);
+    --Rose-0: hsl(330, 100%, 98%);
+}
