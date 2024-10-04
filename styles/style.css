@@ -1,10 +1,8 @@
 /* Young Serif font family  */
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-/* font-family: "Young Serif", serif; */
 
 /* Outifit font family  */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-/* font-family: "Outfit", sans-serif; */
 
 /* Main colors */
 :root {
@@ -28,6 +26,7 @@
 }
 
 body {
+    font-family: "Outfit", sans-serif;
     background-color: var(--Stone-100);
     display: flex;
     flex-flow: row wrap;
@@ -37,16 +36,16 @@ body {
 
 main {
     background-color: var(--White);
-    max-width: 37rem;
+    max-width: 40rem;
     max-height: fit-content;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    /* row-gap: 1rem; */
     border-radius: 10px;
     margin: 1rem;
 }
 
+/* Header  */
 header {
     width: 100%;
     display: flex;
@@ -61,16 +60,17 @@ header h1 {
 
 header p {
     padding: 0.5rem;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
 }
 
 main img {
     max-width: 100%;
     max-height: 20rem;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 0.5rem;
 }
 
+/* Perparation Time  */
 main .prep-time {
     background-color: var(--Rose-0);
     width: 100%;
@@ -79,7 +79,7 @@ main .prep-time {
     border-radius: 10px;
 }
 
-main .prep-time h3 {
+main .prep-time h4 {
     color: var(--Rose-00);
     padding: 0.5rem;
 }
@@ -87,31 +87,169 @@ main .prep-time h3 {
 main .prep-time ul {
     padding: 0 1.5rem;
 }
+
 main .prep-time ul li {
     padding-top: 0.5rem;
 }
 
+/* Igredients */
 main .ingredients {
     width: 100%;
     padding: 1rem;
     margin: 0 1rem;
 }
- 
+
 main .ingredients h2 {
-    color: var();
     padding-bottom: 0.7rem;
 }
 
 main .ingredients ul {
     padding: 0 1.3rem;
 }
- 
+
 main .ingredients ul li {
     padding-top: 0.4rem;
 }
 
+/* Instructions  */
+main .instructions {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+main .instructions h2 {
+    padding-bottom: 0.7rem;
+}
+
+main .instructions ol {
+    padding: 0 1.3rem;
+}
+
+main .instructions ol li {
+    padding-top: 0.4rem;
+}
+
+main .instructions ol li {
+    font-size: 1.1rem;
+}
+
+main .instructions ol li::marker {
+    color: var(--Rose-00);
+    font-weight: 700;
+}
+
+/* Nutrition */
+.nutrition {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0 1rem;
+}
+
+main .nutrition p {
+    padding-bottom: 0.7rem;
+}
+
+main .nutrition table {
+    padding: 0 1.3rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+main .nutrition table tr td {
+    padding: 0.5rem 1.2rem;
+}
+
+main .nutrition table tr:first-of-type,
+main .nutrition table tr:nth-of-type(2),
+main .nutrition table tr:nth-of-type(3) {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+main .nutrition table .bold-word {
+    color: var(--Rose-00);
+}
+
+/* Attribution */
+.attribution {
+    width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+
+/* Multiple Elements */
 main hr {
-    width: 93%;
+    width: 90%;
     opacity: 0.4;
     text-align: center;
+    margin: 0.5rem;
+    height: fit-content;
+}
+
+main h2 {
+    color: var(--Rose-00);
+    padding-bottom: 0.7rem;
+}
+
+.bold-word {
+    font-weight: 700;
+}
+
+h1, h2, h3 {
+    font-family: "Young Serif", serif;
+    font-weight: 550;
+}
+
+/* Media Query  */
+@media (max-width: 375px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header img {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    header h1 {
+        padding: 0.5rem 1.5rem;
+    }
+
+    header p {
+        padding: 0 1.5rem;
+    }
+
+    main .prep-time {
+        margin: 1rem 0.7rem;
+        padding: 0.5rem;
+    }
+
+    main .instructions {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    main .nutrition {
+        margin: 0.5rem;
+
+    }
+
+    main .nutrition table tr td {
+        padding: 0.3rem 0.2rem;
+    }
+
+    main hr {
+        width: 85%;
+    }
+
 }
